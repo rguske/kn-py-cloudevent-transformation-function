@@ -2,6 +2,8 @@
 
 Example Knative Python function for receiving a custom json event (payload) which will be transformed into a CloudEvent.
 
+![Alt text](image.png)
+
 # How the function works
 
 The function starts a HTTP server, transforms an incoming json payload to a [CloudEvent](https://cloudevents.io/) and sends it to the configured `K_SINK` (injected via a Knative [`SinkBinding`](https://knative.dev/docs/eventing/custom-event-source/sinkbinding/)).
